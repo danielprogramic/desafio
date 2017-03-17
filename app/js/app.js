@@ -37,10 +37,6 @@
         $scope.yearopts = [];
         $scope.id = 0;
 
-        $scope.customer = {
-            name: 'Naomi',
-            address: '1600 Amphitheatre'
-        };
         for (var prop in typeselect) {
             $scope.witingopts.push(typeselect[prop].witing);
             $scope.monthopts.push(typeselect[prop].month);
