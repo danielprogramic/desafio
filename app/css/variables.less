@@ -1,0 +1,433 @@
+
+@imgurl: "../img";
+
+
+@font-primary: 'Open Sans', sans-serif;
+@font-secondary: 'Poppins', sans-serif;
+@font-awesome: 'FontAwesome';
+
+
+@bluebktop: #01649d;
+@bluebkbottom: #7ba4d0;
+@black: #fff;
+
+@d-65: 65%;
+
+
+.font-family( @family: @font-primary ){
+	font-family: @family;
+}
+
+.font( @family: @font-primary; @size: 14px; @height: normal; @weight: 400 ){
+	.font-family( @family );
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+}
+
+.border-radius( @string ){
+	-webkit-border-radius: @string;
+	   -moz-border-radius: @string;
+		-ms-border-radius: @string;
+		 -o-border-radius: @string;
+			border-radius: @string;
+}
+
+.box-shadow( @string ){
+	-webkit-box-shadow: @string;
+	   -moz-box-shadow: @string;
+	    -ms-box-shadow: @string;
+	     -o-box-shadow: @string;
+			box-shadow: @string;
+}
+
+.box-shadow-none(){
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+		-ms-box-shadow: none;
+		 -o-box-shadow: none;
+			box-shadow: none;
+}
+
+.background-cover(@string){
+  background: url(@string) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.animation( @string ){
+	-webkit-animation: @string;
+       -moz-animation: @string;
+        -ms-animation: @string;
+         -o-animation: @string;
+    		animation: @string;
+}
+
+
+
+.animation-name( @name ){
+	-webkit-animation-name: @name;
+	   -moz-animation-name: @name;
+	    -ms-animation-name: @name;
+	     -o-animation-name: @name;
+  	        animation-name: @name;
+}
+
+.animation-duration( @duration: 1s ){
+	-webkit-animation-duration: @duration;
+	   -moz-animation-duration: @duration;
+	     -o-animation-duration: @duration;
+	        animation-duration: @duration;
+}
+
+.animation-fill( @mode: both ){
+	-webkit-animation-fill-mode: @mode;
+	   -moz-animation-fill-mode: @mode;
+	     -o-animation-fill-mode: @mode;
+	        animation-fill-mode: @mode;
+}
+
+
+
+
+
+.animate-yellow(@delay){
+
+		@-webkit-keyframes slidemenui {
+			0% {
+				height: 0px;
+			}
+			100% {
+				height:5%;
+			}
+		}
+		-webkit-animation-delay:@delay;
+		-webkit-animation-name: slidemenui;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-animation-duration: @delay;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+
+		-moz-animation-delay:@delay;
+		-moz-animation-name: slidemenui;
+		-moz-animation-timing-function: ease-out;
+		-moz-animation-duration: @delay;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+
+		-ms-animation-delay:@delay;
+		-ms-animation-name: slidemenui;
+		-ms-animation-timing-function: ease-out;
+		-ms-animation-duration: @delay;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-fill-mode: forwards;
+
+		-o-animation-delay:@delay;
+		-o-animation-name: slidemenui;
+		-o-animation-timing-function: ease-out;
+		-o-animation-duration: @delay;
+		-o-animation-iteration-count: 1;
+		-o-animation-fill-mode: forwards;
+
+		animation-delay:@delay;
+		animation-name: slidemenui;
+		animation-timing-function: ease-out;
+		animation-duration: @delay;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;	
+}
+
+.animate-green(@delay){
+
+		@-webkit-keyframes slidemenug {
+			0% {
+				height: 0px;
+			}
+			100% {
+				height:50%;
+			}
+		}
+		-webkit-animation-delay:@delay;
+		-webkit-animation-name: slidemenug;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-animation-duration: @delay;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+
+		-moz-animation-delay:@delay;
+		-moz-animation-name: slidemenug;
+		-moz-animation-timing-function: ease-out;
+		-moz-animation-duration: @delay;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+
+		-ms-animation-delay:@delay;
+		-ms-animation-name: slidemenug;
+		-ms-animation-timing-function: ease-out;
+		-ms-animation-duration: @delay;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-fill-mode: forwards;
+
+		-o-animation-delay:@delay;
+		-o-animation-name: slidemenug;
+		-o-animation-timing-function: ease-out;
+		-o-animation-duration: @delay;
+		-o-animation-iteration-count: 1;
+		-o-animation-fill-mode: forwards;
+
+		animation-delay:@delay;
+		animation-name: slidemenug;
+		animation-timing-function: ease-out;
+		animation-duration: @delay;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;	
+}
+
+
+.animate-green2(@delay){
+
+		@-webkit-keyframes slidemenug2 {
+			0% {
+				height: 0px;
+			}
+			100% {
+				height:75%;
+			}
+		}
+		-webkit-animation-delay:@delay;
+		-webkit-animation-name: slidemenug2;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-animation-duration: @delay;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+
+		-moz-animation-delay:@delay;
+		-moz-animation-name: slidemenug2;
+		-moz-animation-timing-function: ease-out;
+		-moz-animation-duration: @delay;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+
+		-ms-animation-delay:@delay;
+		-ms-animation-name: slidemenug2;
+		-ms-animation-timing-function: ease-out;
+		-ms-animation-duration: @delay;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-fill-mode: forwards;
+
+		-o-animation-delay:@delay;
+		-o-animation-name: slidemenug2;
+		-o-animation-timing-function: ease-out;
+		-o-animation-duration: @delay;
+		-o-animation-iteration-count: 1;
+		-o-animation-fill-mode: forwards;
+
+		animation-delay:@delay;
+		animation-name: slidemenug2;
+		animation-timing-function: ease-out;
+		animation-duration: @delay;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;	
+}
+
+
+
+.animate-blue(@delay){
+
+		@-webkit-keyframes slidemenub {
+			0% {
+				height: 0px;
+			}
+			100% {
+				height:100%;
+			}
+		}
+		-webkit-animation-delay:@delay;
+		-webkit-animation-name: slidemenub;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-animation-duration: @delay;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+
+		-moz-animation-delay:@delay;
+		-moz-animation-name: slidemenub;
+		-moz-animation-timing-function: ease-out;
+		-moz-animation-duration: @delay;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+
+		-ms-animation-delay:@delay;
+		-ms-animation-name: slidemenub;
+		-ms-animation-timing-function: ease-out;
+		-ms-animation-duration: @delay;
+		-ms-animation-iteration-count: 1;
+		-ms-animation-fill-mode: forwards;
+
+		-o-animation-delay:@delay;
+		-o-animation-name: slidemenub;
+		-o-animation-timing-function: ease-out;
+		-o-animation-duration: @delay;
+		-o-animation-iteration-count: 1;
+		-o-animation-fill-mode: forwards;
+
+		animation-delay:@delay;
+		animation-name: slidemenub;
+		animation-timing-function: ease-out;
+		animation-duration: @delay;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;	
+}
+
+
+.transition( @string ){
+	-webkit-transition: @string;
+	   -moz-transition: @string;
+		-ms-transition: @string;
+		 -o-transition: @string;
+			transition: @string;
+}
+
+.transition-timing( @string ){
+	-webkit-transition-timing-function: @string;
+	   -moz-transition-timing-function: @string;
+		-ms-transition-timing-function: @string;
+		 -o-transition-timing-function: @string;
+			transition-timing-function: @string;
+}
+
+.transition-duration( @string ){
+	-webkit-transition-duration: @string;
+	   -moz-transition-duration: @string;
+		-ms-transition-duration: @string;
+		 -o-transition-duration: @string;
+			transition-duration: @string;
+}
+
+
+.transition-property( @string ){
+	-webkit-transition-property: @string;
+	   -moz-transition-property: @string;
+		-ms-transition-property: @string;
+		 -o-transition-property: @string;
+			transition-property: @string;
+}
+
+.rotateX( @deg ){
+	-webkit-transform: rotateX(@deg);
+	   -moz-transform: rotateX(@deg);
+	  	-ms-transform: rotateX(@deg); 
+	   	 -o-transform: rotateX(@deg);
+	   		transform: rotateX(@deg);
+}
+
+.rotateY( @deg ){
+	-webkit-transform: rotateY(@deg);
+	   -moz-transform: rotateY(@deg);
+	  	-ms-transform: rotateY(@deg); 
+	   	 -o-transform: rotateY(@deg);
+	   		transform: rotateY(@deg);
+}
+
+.rotate( @deg ){
+	-webkit-transform: rotate(@deg);
+	   -moz-transform: rotate(@deg);
+	  	-ms-transform: rotate(@deg); 
+	   	 -o-transform: rotate(@deg);
+	   		transform: rotate(@deg);
+}
+
+.transform-origin( @string ){
+	-webkit-transform-origin: @string;
+       -moz-transform-origin: @string;
+        -ms-transform-origin: @string;
+         -o-transform-origin: @string;
+    		transform-origin: @string; 
+}
+
+.box-sizing( @string: border-box ){
+	-webkit-box-sizing: @string;
+	   -moz-box-sizing: @string;
+		-ms-box-sizing: @string;
+		 -o-box-sizing: @string;
+			box-sizing: @string;
+}
+
+.background-size( @bgsize: cover ){
+	-webkit-background-size: @bgsize;
+	   -moz-background-size: @bgsize;
+		-ms-background-size: @bgsize;
+		 -o-background-size: @bgsize;
+			background-size: @bgsize;
+}
+
+.background-gradient(@from: darken(@purple, 60%); @to: darken(@theme-color, 25%)){
+	background-image: -webkit-linear-gradient(top, fade(@from, 80%) 0%, fade(@to, 80%) 100%);
+	background-image: -o-linear-gradient(top, fade(@from, 80%) 0%, fade(@to, 80%) 100%);
+	background-image: linear-gradient(to bottom, fade(@from, 80%) 0%, fade(@to, 80%) 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@to7d', endColorstr='@to7d', GradientType=0);
+}
+
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+ 	background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+  .vertical-gradient (@startColor: #555, @endColor: #333) {
+    background-color: @endColor;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(90deg, @startColor 9%, @endColor 70%);
+	background-image: -webkit-linear-gradient(90deg, @startColor 9%, @endColor 70%);
+    background-image: -o-linear-gradient(90deg, @startColor 9%, @endColor 70%);
+	background-image: -ms-linear-gradient(90deg, @startColor 9%, @endColor 70%);
+	background-image: linear-gradient(180deg, @startColor 9%, @endColor 70%);
+  }
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.rgba(@color; @opacity){
+	@rgba : rgba( red(@color), green(@color), blue(@color), @opacity );
+}
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.translate3d( @x; @y; @z ){
+	-webkit-transform: translate3d(@x,@y,@z);
+       -moz-transform: translate3d(@x,@y,@z);
+    	-ms-transform: translate3d(@x,@y,@z);
+    	 -o-transform: translate3d(@x,@y,@z);
+    		transform: translate3d(@x,@y,@z);
+}
+
+.transform( @string ){
+	-webkit-transform: @string;
+       -moz-transform: @string;
+    	-ms-transform: @string;
+    	 -o-transform: @string;
+    		transform: @string;
+}
+
+.backface-visibility( @string: hidden ){
+	-webkit-backface-visibility: @string;
+	   -moz-backface-visibility: @string;
+	    -ms-backface-visibility: @string;
+	     -o-backface-visibility: @string;
+			backface-visibility: @string;
+}
